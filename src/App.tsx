@@ -10,6 +10,7 @@ import {
 } from "@solana/wallet-adapter-react-ui";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import { TokenLaunchpad } from "./components/TokenLaunchpad";
+import TokenLaunchpadWithMetadata from "./components/TokenLaunchpadWithMetadata";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
               <WalletMultiButton />
               <WalletDisconnectButton />
             </div>
-            <TokenLaunchpad />
+            {/* <TokenLaunchpad /> */}
+            <TokenLaunchpadWithMetadata />
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
